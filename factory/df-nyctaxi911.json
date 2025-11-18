@@ -1,0 +1,9 @@
+{
+	"name": "df-nyctaxi911",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0aeceb4e-909f-4c88-91fb-b858e64f6517",
+		"tenantId": "3fe63f96-8547-46fc-9254-a8df18aca857"
+	}
+}
