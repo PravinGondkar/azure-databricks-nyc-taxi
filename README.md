@@ -61,7 +61,7 @@ Aggregated KPIs
 Optimized for reporting
 
 ## 📁 Repository Structure
-.
+''' .
 ├── README.md
 ├── notebooks/
 │   ├── 0-setup.py
@@ -74,7 +74,7 @@ Optimized for reporting
 │   └── deploy_databricks_notebooks.sh
 └── tests/
     └── test_transforms.py
-
+'''
 ## 🚀 Getting Started
 Prerequisites
 
