@@ -1,5 +1,8 @@
-Azure Databricks NYC Taxi – End-to-End Data Engineering Project
+#Azure Databricks NYC Taxi – End-to-End Data Engineering Project
+
+
 This document provides a complete, production-quality overview of an end-to-end data engineering pipeline built using Azure, Databricks, Delta Lake, and the NYC Taxi dataset.
+
 1. Project Overview
 This project demonstrates how to ingest, store, transform, orchestrate, and analyze large-scale datasets on Azure using modern data engineering tools. It uses the NYC Taxi dataset as a practical real-world example.
 2. Architecture
