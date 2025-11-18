@@ -28,11 +28,9 @@
 					"source": {
 						"type": "JsonSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
+							"type": "HttpReadSettings",
 							"maxConcurrentConnections": 5,
-							"recursive": true,
-							"wildcardFileName": "*",
-							"enablePartitionDiscovery": false
+							"requestMethod": "GET"
 						},
 						"formatSettings": {
 							"type": "JsonReadSettings"

@@ -2,14 +2,14 @@
 	"name": "SourceDataset_9du",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "nyctaxiDataLakeStorage",
+			"referenceName": "GitHttp",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "HttpServerLocation"
 			}
 		},
 		"schema": {}
