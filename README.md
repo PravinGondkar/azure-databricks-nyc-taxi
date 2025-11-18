@@ -1,7 +1,7 @@
 # Azure Databricks NYC Taxi – End-to-End Data Engineering Project
 
 
-📘 Project Overview
+## 📘 Project Overview
 
 This project builds a complete Azure-based data pipeline:
 
@@ -16,7 +16,7 @@ Deploy infrastructure using Terraform
 
 CI/CD with GitHub Actions
 
-🏗 Architecture
+## 🏗 Architecture
 NYC Taxi Public Data
         ↓
 Azure Data Lake Storage Gen2 (Raw)
@@ -27,7 +27,7 @@ Delta Lake Managed Tables
         ↓
 Power BI / Databricks SQL Warehouse
 
-🥇 Medallion Architecture
+## 🥇 Medallion Architecture
 Raw Layer
 
 Unmodified JSON/CSV files exactly as received.
@@ -60,7 +60,7 @@ Aggregated KPIs
 
 Optimized for reporting
 
-📁 Repository Structure
+## 📁 Repository Structure
 .
 ├── README.md
 ├── notebooks/
@@ -75,7 +75,7 @@ Optimized for reporting
 └── tests/
     └── test_transforms.py
 
-🚀 Getting Started
+## 🚀 Getting Started
 Prerequisites
 
 Azure Subscription
@@ -92,7 +92,7 @@ Quickstart
 git clone https://github.com/<your-username>/azure-databricks-nyc-taxi.git
 cd azure-databricks-nyc-taxi
 
-🔄 ETL Flow (Databricks)
+## 🔄 ETL Flow (Databricks)
 0-setup.py
 
 Configure storage locations
@@ -126,7 +126,7 @@ KPI creation
 
 Aggregated marts for BI
 
-🏗 Infrastructure (Terraform)
+## 🏗 Infrastructure (Terraform)
 
 Resources created:
 
@@ -147,7 +147,7 @@ terraform init
 terraform plan
 terraform apply
 
-🔧 CI/CD
+## 🔧 CI/CD
 
 Implement using GitHub Actions:
 
@@ -167,7 +167,7 @@ pytest
 
 Databricks CLI upload
 
-🧪 Testing & Data Quality
+## 🧪 Testing & Data Quality
 
 Use pytest for local tests:
 
@@ -184,7 +184,7 @@ Range validations (e.g. trip_distance > 0)
 
 Duplicate detection
 
-🔐 Security
+## 🔐 Security
 
 Use Azure Key Vault for all secrets
 
@@ -196,7 +196,7 @@ Implement least-privilege RBAC
 
 Enable encryption at rest (CMK optional)
 
-📊 Monitoring & Cost Control
+## 📊 Monitoring & Cost Control
 
 Enable cluster autoscaling
 
@@ -208,7 +208,7 @@ Enable logging to Azure Monitor
 
 Configure job alerts
 
-🔧 Tech Stack
+## 🔧 Tech Stack
 
 Azure Databricks
 
