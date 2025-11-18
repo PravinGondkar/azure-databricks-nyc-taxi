@@ -1,0 +1,12 @@
+{
+	"name": "GitHttp",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://github.com/PravinGondkar/azure-databricks-nyc-taxi",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
