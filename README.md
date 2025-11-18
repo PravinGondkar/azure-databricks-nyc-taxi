@@ -1,102 +1,227 @@
-#Azure Databricks NYC Taxi – End-to-End Data Engineering Project
+# Azure Databricks NYC Taxi – End-to-End Data Engineering Project
 
 
-This document provides a complete, production-quality overview of an end-to-end data engineering pipeline built using Azure, Databricks, Delta Lake, and the NYC Taxi dataset.
+📘 Project Overview
 
-1. Project Overview
-This project demonstrates how to ingest, store, transform, orchestrate, and analyze large-scale datasets on Azure using modern data engineering tools. It uses the NYC Taxi dataset as a practical real-world example.
-2. Architecture
-The solution uses Azure Data Factory for ingestion, Azure Data Lake Storage Gen2 for data storage, Azure Databricks for processing, Delta Lake for optimized storage layers, and Power BI or Databricks SQL for reporting.
+This project builds a complete Azure-based data pipeline:
 
-Architecture Diagram (text representation):
-                Public Data Source
-                       |
-                Azure Data Factory
-                       |
-         ┌───────────────────────────────────┐
-         │ Azure Data Lake Storage Gen2       │
-         │ raw → bronze → silver → gold       │
-         └───────────────────────────────────┘
-                       |
-                Azure Databricks
-                       |
-                Databricks SQL / Power BI
-3. Medallion Architecture (Delta Lake)
-The project follows the Bronze/Silver/Gold medallion architecture:
-- RAW: Raw files ingested as-is.
-- BRONZE: Schema applied, minimal cleanup.
-- SILVER: Cleaned, deduplicated, normalized data.
-- GOLD: Aggregate tables ready for analytics and BI.
-4. Repository Structure
-The repository includes infrastructure code, Databricks notebooks, transformation scripts, tests, and deployment scripts.
+Ingest NYC Taxi trip data → Azure Data Lake (raw)
 
-Structure:
+Process with Databricks + Delta Lake into
+Bronze → Silver → Gold layers
+
+Serve analytics via Databricks SQL or Power BI
+
+Deploy infrastructure using Terraform
+
+CI/CD with GitHub Actions
+
+🏗 Architecture
+NYC Taxi Public Data
+        ↓
+Azure Data Lake Storage Gen2 (Raw)
+        ↓
+Databricks (Bronze → Silver → Gold)
+        ↓
+Delta Lake Managed Tables
+        ↓
+Power BI / Databricks SQL Warehouse
+
+🥇 Medallion Architecture
+Raw Layer
+
+Unmodified JSON/CSV files exactly as received.
+
+Bronze Layer
+
+Basic parsing
+
+Minimal cleaning
+
+Schema-on-read
+
+Stored in Delta format
+
+Silver Layer
+
+Data quality checks
+
+Typed schema
+
+Deduplication
+
+Error handling
+
+Gold Layer
+
+BI-ready data marts
+
+Aggregated KPIs
+
+Optimized for reporting
+
+📁 Repository Structure
+.
+├── README.md
 ├── notebooks/
 │   ├── 0-setup.py
 │   ├── 1_bronze_ingest.py
 │   ├── 2_silver_transform.py
 │   └── 3_gold_aggregates.py
-├── infrastructure/main.tf
-├── scripts/deploy_databricks_notebooks.sh
-└── tests/test_transforms.py
-5. Setup Instructions
-1. Deploy resources via Terraform.
-2. Configure Databricks cluster and secret scopes.
-3. Ingest raw NYC Taxi data into ADLS using Azure Data Factory or manual upload.
-4. Execute Databricks ETL notebooks in order: setup → bronze → silver → gold.
-5. Connect Power BI or Databricks SQL Warehouse to GOLD tables for visualization.
-6. Databricks ETL Workflow
-The ETL process uses PySpark notebooks and Delta Lake tables.
+├── infrastructure/
+│   └── main.tf
+├── scripts/
+│   └── deploy_databricks_notebooks.sh
+└── tests/
+    └── test_transforms.py
 
-Bronze Layer:
-- Read raw CSV/JSON files
-- Apply basic schema
-- Store as Delta
+🚀 Getting Started
+Prerequisites
 
-Silver Layer:
-- Clean data
-- Deduplicate rows
-- Convert timestamps
+Azure Subscription
 
-Gold Layer:
-- Produce analytical aggregates such as trips per day, average fare, vendor metrics.
-7. CI/CD Pipeline
-The CI/CD workflow uses GitHub Actions to:
-- Deploy notebooks to Databricks
-- Run unit tests using pytest
-- Validate Terraform
-- Promote code to production environments
-8. Testing Approach
-Unit tests validate data transformations and ensure data quality rules:
-- Column type checks
-- Null validations
-- Row count expectations
-- Business logic (e.g., trip distance > 0)
-9. Security Best Practices
-Security includes:
-- Managed Identity usage
-- Key Vault for secret storage
-- Restricted ADLS access policies
-- Encrypted storage accounts
-- Databricks cluster access controls
-10. Monitoring
-Monitoring and observability tools used:
-- Azure Monitor for logs and metrics
-- Databricks job logs and execution history
-- Delta Lake expectations for data quality
-- ADF pipeline monitoring and alerts
-11. Technologies Used
-- Azure Databricks
-- Delta Lake
-- Azure Data Factory
-- Azure Data Lake Storage Gen2
-- Azure Key Vault
-- Terraform
-- GitHub Actions
-- Power BI
-12. Project Goals
-This project aims to:
-- Demonstrate real-world data engineering architecture
-- Build an enterprise-grade pipeline on Azure
-- Showcase Databricks and Delta Lake best practices
-- Provide a reusable template for future pipelines
+Azure Databricks Workspace
+
+Terraform CLI
+
+GitHub Account
+
+Power BI (optional)
+
+Quickstart
+git clone https://github.com/<your-username>/azure-databricks-nyc-taxi.git
+cd azure-databricks-nyc-taxi
+
+🔄 ETL Flow (Databricks)
+0-setup.py
+
+Configure storage locations
+
+Create secret scopes
+
+Mount ADLS (if used)
+
+1_bronze_ingest.py
+
+Reads raw data → writes Bronze Delta
+
+df.write.format("delta") \
+  .mode("append") \
+  .partitionBy("pickup_date") \
+  .save("/mnt/delta/bronze/nyc_taxi")
+
+2_silver_transform.py
+
+Clean code
+
+Type casting
+
+Deduplication
+
+Null handling
+
+3_gold_aggregates.py
+
+KPI creation
+
+Aggregated marts for BI
+
+🏗 Infrastructure (Terraform)
+
+Resources created:
+
+Resource Group
+
+Storage Account (ADLS Gen2)
+
+Databricks Workspace
+
+Key Vault
+
+Service Principal / Managed Identity
+
+Run:
+
+cd infrastructure
+terraform init
+terraform plan
+terraform apply
+
+🔧 CI/CD
+
+Implement using GitHub Actions:
+
+Validate Terraform
+
+Run PySpark unit tests
+
+Deploy notebooks to Databricks
+
+Promote to production
+
+Workflow example steps:
+
+terraform validate
+
+pytest
+
+Databricks CLI upload
+
+🧪 Testing & Data Quality
+
+Use pytest for local tests:
+
+pytest tests/
+
+
+Recommended checks:
+
+Schema validation
+
+Null checks
+
+Range validations (e.g. trip_distance > 0)
+
+Duplicate detection
+
+🔐 Security
+
+Use Azure Key Vault for all secrets
+
+Enable Databricks secret scopes
+
+Use Managed Identity where possible
+
+Implement least-privilege RBAC
+
+Enable encryption at rest (CMK optional)
+
+📊 Monitoring & Cost Control
+
+Enable cluster autoscaling
+
+Use cluster pools
+
+Track costs via Azure Cost Management
+
+Enable logging to Azure Monitor
+
+Configure job alerts
+
+🔧 Tech Stack
+
+Azure Databricks
+
+ADLS Gen2
+
+Delta Lake
+
+PySpark
+
+Azure Key Vault
+
+Terraform
+
+GitHub Actions
+
+Power BI
