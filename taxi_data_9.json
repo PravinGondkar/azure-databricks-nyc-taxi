@@ -1,0 +1,172 @@
+[
+  {
+    "ride_id": "R90",
+    "pickup_datetime": "2025-02-04T16:23:00",
+    "dropoff_datetime": "2025-02-04T17:16:00",
+    "passenger_count": 5,
+    "trip_distance_km": 11.5,
+    "fare_amount": 279.59,
+    "pickup_location": {
+      "lat": 18.995754,
+      "lon": 72.920559
+    },
+    "dropoff_location": {
+      "lat": 18.936136,
+      "lon": 72.951633
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R91",
+    "pickup_datetime": "2025-01-31T14:51:00",
+    "dropoff_datetime": "2025-01-31T15:19:00",
+    "passenger_count": 1,
+    "trip_distance_km": 11.87,
+    "fare_amount": 387.51,
+    "pickup_location": {
+      "lat": 18.91102,
+      "lon": 72.786339
+    },
+    "dropoff_location": {
+      "lat": 19.250783,
+      "lon": 72.963933
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R92",
+    "pickup_datetime": "2025-01-07T17:20:00",
+    "dropoff_datetime": "2025-01-07T18:16:00",
+    "passenger_count": 1,
+    "trip_distance_km": 20.24,
+    "fare_amount": 349.7,
+    "pickup_location": {
+      "lat": 18.999486,
+      "lon": 72.894132
+    },
+    "dropoff_location": {
+      "lat": 19.059289,
+      "lon": 72.959846
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R93",
+    "pickup_datetime": "2025-02-01T10:24:00",
+    "dropoff_datetime": "2025-02-01T11:09:00",
+    "passenger_count": 1,
+    "trip_distance_km": 16.66,
+    "fare_amount": 865.96,
+    "pickup_location": {
+      "lat": 19.266932,
+      "lon": 72.884134
+    },
+    "dropoff_location": {
+      "lat": 19.11942,
+      "lon": 72.907249
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R94",
+    "pickup_datetime": "2025-01-07T01:24:00",
+    "dropoff_datetime": "2025-01-07T01:48:00",
+    "passenger_count": 2,
+    "trip_distance_km": 10.16,
+    "fare_amount": 755.59,
+    "pickup_location": {
+      "lat": 19.05601,
+      "lon": 72.784688
+    },
+    "dropoff_location": {
+      "lat": 19.140962,
+      "lon": 72.751723
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R95",
+    "pickup_datetime": "2025-01-16T20:16:00",
+    "dropoff_datetime": "2025-01-16T21:11:00",
+    "passenger_count": 2,
+    "trip_distance_km": 3.3,
+    "fare_amount": 612.39,
+    "pickup_location": {
+      "lat": 19.155161,
+      "lon": 72.781247
+    },
+    "dropoff_location": {
+      "lat": 19.212934,
+      "lon": 72.811829
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R96",
+    "pickup_datetime": "2025-01-14T02:22:00",
+    "dropoff_datetime": "2025-01-14T03:07:00",
+    "passenger_count": 1,
+    "trip_distance_km": 21.97,
+    "fare_amount": 805.68,
+    "pickup_location": {
+      "lat": 19.196265,
+      "lon": 72.879955
+    },
+    "dropoff_location": {
+      "lat": 19.212014,
+      "lon": 72.818203
+    },
+    "payment_method": "upi"
+  },
+  {
+    "ride_id": "R97",
+    "pickup_datetime": "2025-01-12T16:18:00",
+    "dropoff_datetime": "2025-01-12T16:32:00",
+    "passenger_count": 4,
+    "trip_distance_km": 9.22,
+    "fare_amount": 891.44,
+    "pickup_location": {
+      "lat": 19.19574,
+      "lon": 72.881081
+    },
+    "dropoff_location": {
+      "lat": 19.029291,
+      "lon": 72.876927
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R98",
+    "pickup_datetime": "2025-01-27T11:58:00",
+    "dropoff_datetime": "2025-01-27T12:24:00",
+    "passenger_count": 5,
+    "trip_distance_km": 16.71,
+    "fare_amount": 561.94,
+    "pickup_location": {
+      "lat": 18.988668,
+      "lon": 72.932577
+    },
+    "dropoff_location": {
+      "lat": 19.243169,
+      "lon": 72.84206
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R99",
+    "pickup_datetime": "2025-01-10T23:55:00",
+    "dropoff_datetime": "2025-01-11T00:05:00",
+    "passenger_count": 3,
+    "trip_distance_km": 7.29,
+    "fare_amount": 668.32,
+    "pickup_location": {
+      "lat": 19.164326,
+      "lon": 72.911983
+    },
+    "dropoff_location": {
+      "lat": 18.980576,
+      "lon": 72.939861
+    },
+    "payment_method": "card"
+  }
+]

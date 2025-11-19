@@ -1,0 +1,172 @@
+[
+  {
+    "ride_id": "R10",
+    "pickup_datetime": "2025-01-28T11:13:00",
+    "dropoff_datetime": "2025-01-28T11:26:00",
+    "passenger_count": 2,
+    "trip_distance_km": 21.01,
+    "fare_amount": 62.5,
+    "pickup_location": {
+      "lat": 19.041419,
+      "lon": 72.782809
+    },
+    "dropoff_location": {
+      "lat": 19.010444,
+      "lon": 72.943636
+    },
+    "payment_method": "cash"
+  },
+  {
+    "ride_id": "R11",
+    "pickup_datetime": "2025-01-12T09:27:00",
+    "dropoff_datetime": "2025-01-12T10:13:00",
+    "passenger_count": 3,
+    "trip_distance_km": 15.42,
+    "fare_amount": 276.18,
+    "pickup_location": {
+      "lat": 19.127051,
+      "lon": 72.986119
+    },
+    "dropoff_location": {
+      "lat": 19.098765,
+      "lon": 72.868252
+    },
+    "payment_method": "upi"
+  },
+  {
+    "ride_id": "R12",
+    "pickup_datetime": "2025-01-21T22:04:00",
+    "dropoff_datetime": "2025-01-21T22:21:00",
+    "passenger_count": 2,
+    "trip_distance_km": 6.19,
+    "fare_amount": 710.82,
+    "pickup_location": {
+      "lat": 19.03227,
+      "lon": 72.848843
+    },
+    "dropoff_location": {
+      "lat": 19.11491,
+      "lon": 72.864263
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R13",
+    "pickup_datetime": "2025-01-07T07:56:00",
+    "dropoff_datetime": "2025-01-07T08:51:00",
+    "passenger_count": 3,
+    "trip_distance_km": 17.89,
+    "fare_amount": 559.7,
+    "pickup_location": {
+      "lat": 19.099591,
+      "lon": 72.85518
+    },
+    "dropoff_location": {
+      "lat": 19.064228,
+      "lon": 72.825734
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R14",
+    "pickup_datetime": "2025-02-03T22:59:00",
+    "dropoff_datetime": "2025-02-03T23:57:00",
+    "passenger_count": 1,
+    "trip_distance_km": 13.44,
+    "fare_amount": 232.16,
+    "pickup_location": {
+      "lat": 19.149141,
+      "lon": 72.819857
+    },
+    "dropoff_location": {
+      "lat": 19.108457,
+      "lon": 72.81434
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R15",
+    "pickup_datetime": "2025-02-04T04:14:00",
+    "dropoff_datetime": "2025-02-04T05:02:00",
+    "passenger_count": 5,
+    "trip_distance_km": 19.22,
+    "fare_amount": 763.92,
+    "pickup_location": {
+      "lat": 18.934885,
+      "lon": 72.954443
+    },
+    "dropoff_location": {
+      "lat": 19.150582,
+      "lon": 72.809147
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R16",
+    "pickup_datetime": "2025-01-07T22:35:00",
+    "dropoff_datetime": "2025-01-07T22:56:00",
+    "passenger_count": 3,
+    "trip_distance_km": 14.88,
+    "fare_amount": 74.68,
+    "pickup_location": {
+      "lat": 19.237405,
+      "lon": 72.963748
+    },
+    "dropoff_location": {
+      "lat": 19.163723,
+      "lon": 72.809752
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R17",
+    "pickup_datetime": "2025-01-07T00:59:00",
+    "dropoff_datetime": "2025-01-07T01:36:00",
+    "passenger_count": 3,
+    "trip_distance_km": 23.33,
+    "fare_amount": 222.53,
+    "pickup_location": {
+      "lat": 19.053329,
+      "lon": 72.9166
+    },
+    "dropoff_location": {
+      "lat": 19.013851,
+      "lon": 72.926709
+    },
+    "payment_method": "upi"
+  },
+  {
+    "ride_id": "R18",
+    "pickup_datetime": "2025-01-12T17:51:00",
+    "dropoff_datetime": "2025-01-12T18:37:00",
+    "passenger_count": 5,
+    "trip_distance_km": 12.3,
+    "fare_amount": 679.78,
+    "pickup_location": {
+      "lat": 19.265995,
+      "lon": 72.895115
+    },
+    "dropoff_location": {
+      "lat": 18.933324,
+      "lon": 72.850173
+    },
+    "payment_method": "card"
+  },
+  {
+    "ride_id": "R19",
+    "pickup_datetime": "2025-01-14T19:59:00",
+    "dropoff_datetime": "2025-01-14T20:08:00",
+    "passenger_count": 5,
+    "trip_distance_km": 10.25,
+    "fare_amount": 247.5,
+    "pickup_location": {
+      "lat": 19.196016,
+      "lon": 72.904153
+    },
+    "dropoff_location": {
+      "lat": 19.112218,
+      "lon": 72.836567
+    },
+    "payment_method": "upi"
+  }
+]
